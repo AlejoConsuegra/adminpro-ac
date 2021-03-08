@@ -7,6 +7,9 @@ import { APP_ROUTES } from './app.routes';
 //modules
 import { PagesModule } from './pages/pages.module';
 
+//temporal
+import { FormsModule } from '@angular/forms';
+
 //component
 
 import { AppComponent } from './app.component';
@@ -24,12 +27,14 @@ import { InicioComponent } from './home/inicio.component';
     RegisterComponent,
 
     HomeComponent,
-    InicioComponent
+    InicioComponent,
+
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
