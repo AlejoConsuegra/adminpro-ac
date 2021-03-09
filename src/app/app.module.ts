@@ -7,6 +7,9 @@ import { APP_ROUTES } from './app.routes';
 //modules
 import { PagesModule } from './pages/pages.module';
 
+//Servicios
+import { ServiceModule } from './services/service.module';
+
 //temporal
 import { FormsModule } from '@angular/forms';
 
@@ -15,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+
+
+ServiceModule
+
 
 import { HomeComponent } from './home/home.component';
 import { InicioComponent } from './home/inicio.component';
@@ -34,7 +42,8 @@ import { InicioComponent } from './home/inicio.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
